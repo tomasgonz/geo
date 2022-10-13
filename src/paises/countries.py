@@ -16,11 +16,6 @@ cache_folder = os.getcwd().split('geo')[0] + 'datascrapper2/countries/cache'
 
 class Countries(list):
 
-	#def __new__(self):
-		#if not hasattr(self, 'instance'):
-		#	self.instance = super().__new__(self)	
-		#return self.instance
-
 	def __init__(self):
 		if len(self) == 0:
 			pass
