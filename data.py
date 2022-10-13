@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from geo.country import Country
+from country import Country
 import json
 import urllib.request
 from ccs import *

@@ -1,4 +1,4 @@
-from geo.countries import Countries
+from countries import Countries
 
 def get_group(group_name):
     all_countries = Countries()

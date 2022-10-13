@@ -1,18 +1,18 @@
 import sys
 import os
-sys.path.append(os.getcwd().split("datascrapper2")[0])
-from geo.country import Country
+sys.path.append(os.getcwd().split("geo")[0])
+from country import Country
 from texttable import Texttable
-from geo.cache import *
+from cache import *
 
-from geo.data import ldcs2025, ldcs2019, ldcs2018, ldcs2017, lldcs, mics, mics_lower, \
+from data import ldcs2025, ldcs2019, ldcs2018, ldcs2017, lldcs, mics, mics_lower, \
 	mics_upper, oecd, sids, africa, asia, \
 	america, north_america, central_america, south_america, \
 	europe, oecd, pacific_islands, asia_and_the_pacific, \
 	developing_excluding_ldcs, \
 	country_alias
 
-cache_folder = os.getcwd().split('datascrapper2')[0] + 'datascrapper2/countries/cache'
+cache_folder = os.getcwd().split('geo')[0] + 'datascrapper2/countries/cache'
 
 class Countries(list):
 

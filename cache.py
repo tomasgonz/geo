@@ -5,7 +5,7 @@ import os
 import os.path
 import time
 
-cache_folder = os.getcwd().split('datascrapper2')[0] + 'datascrapper2/geo/cache'
+cache_folder = os.getcwd().split('geo')[0] + 'geo/cache'
 # 604800 is on week
 max_age = 604800
 
@@ -41,5 +41,6 @@ def retrieve_and_cache(name):
 
     f = get_file_path(name)
     write_cache(data, f)
+    print("Files updated from server")
 
 		
