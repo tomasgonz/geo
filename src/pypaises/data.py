@@ -2,7 +2,7 @@
 from country import Country
 import json
 import urllib.request
-from ccs import *
+from geo.ccs import *
 
 List = []
 
