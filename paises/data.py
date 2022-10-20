@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
-from country import Country
-import json
-import urllib.request
-from geo.ccs import *
+from paises.country import Country
+from paises.ccs import *
 
 List = []
 

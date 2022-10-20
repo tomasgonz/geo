@@ -1,11 +1,11 @@
 import sys
 import os
 sys.path.append(os.getcwd().split("geo")[0])
-from country import Country
+from paises.country import Country
 from texttable import Texttable
-from cache import *
+from paises.cache import *
 
-from data import ldcs2025, ldcs2019, ldcs2018, ldcs2017, lldcs, mics, mics_lower, \
+from paises.data import ldcs2025, ldcs2019, ldcs2018, ldcs2017, lldcs, mics, mics_lower, \
 	mics_upper, oecd, sids, africa, asia, \
 	america, north_america, central_america, south_america, \
 	europe, oecd, pacific_islands, asia_and_the_pacific, \
