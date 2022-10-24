@@ -5,7 +5,8 @@ import os
 import os.path
 import time
 
-cache_folder = os.getcwd().split('paises')[0] + 'paises/cache'
+#cache_folder = os.getcwd().split('paises')[0] + 'paises/cache'
+cache_folder = 'paises/cache'
 # 604800 is on week
 max_age = 604800
 

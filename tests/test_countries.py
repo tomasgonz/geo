@@ -1,3 +1,4 @@
+import sys
 from paises import *
 
 def test_countries():
