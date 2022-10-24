@@ -11,9 +11,6 @@ from paises.data import ldcs2025, ldcs2019, ldcs2018, ldcs2017, lldcs, mics, mic
 	europe, oecd, pacific_islands, asia_and_the_pacific, \
 	developing_excluding_ldcs, \
 	country_alias
-
-cache_folder = os.getcwd().split('geo')[0] + 'datascrapper2/countries/cache'
-
 class Countries(list):
 
 	def __init__(self):
