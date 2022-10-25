@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "paises"
-version = "0.1.5"
+version = "0.1.7"
 description = ""
 authors = ["Tomas <tomasgonz@gmail.com>"]
 readme = "README.md"
 
 packages = [
-    { include = "paises" },
+    { include = "paises" }
 ]
 
 [tool.poetry.dependencies]

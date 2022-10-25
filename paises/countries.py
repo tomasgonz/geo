@@ -2,8 +2,7 @@ import sys
 import os
 sys.path.append(os.getcwd().split("geo")[0])
 from paises.country import Country
-from texttable import Texttable
-from paises.cache import *
+from paises.cache import load_cache
 
 from paises.data import ldcs2025, ldcs2019, ldcs2018, ldcs2017, lldcs, mics, mics_lower, \
 	mics_upper, oecd, sids, africa, asia, \
@@ -249,15 +248,8 @@ class Countries(list):
 	# We fetch data from the World Bank
 	# We use a cache system
 	def load_wb(self):
-		
-		file_name = 'countries'
-		p = get_file_path(file_name)
-		if check_cache(p) == False:
-			retrieve_and_cache(name=file_name)	
-		else:
-			check_age(file_name)    	
-		
-		cached_data = load_cache(p)
+		 	
+		cached_data = load_cache("countries.json")
 		
 		# Store data in array
 		for item in cached_data[1]:
