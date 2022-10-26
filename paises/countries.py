@@ -35,16 +35,8 @@ class Countries(list):
 			table.add_row(r.as_array())
 		table_s = table.draw()
 
-	#def __repr__(self):
-		# table = Texttable()
-
-		#for r in self:
-		#	table.add_row(r.as_array())
-		
-		#table_s = table.draw()
-
-		#return str(table_s)
-	#	yield
+	def __repr__(self):
+		self.get_names()
 
 	# Get a country object using the name
 	def get(self, n):

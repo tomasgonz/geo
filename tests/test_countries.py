@@ -1,10 +1,11 @@
 import sys
-from paises import *
+from paises import Countries
+from paises.groups import *
+
+import importlib.resources
 
 def test_countries():
     c = Countries()
     c.load_wb()
-    print ("test for countries passes")
-
-if __name__ == "__main__":
-    test_countries()
+def test_groups():
+    print(get_groups())
