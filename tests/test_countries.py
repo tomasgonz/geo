@@ -7,4 +7,3 @@ def test_countries():
 
 def test_groups():
     g = Groups()
-    g.names

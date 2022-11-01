@@ -21,4 +21,11 @@ class Groups(list):
 		for g in self:
 			if g['acronym'] == group:
 				return g
+	
+	def get_country_groups(self, country):
+		groups = []
+		for g in self:
+			if country in g['names']:
+				groups.append(g['name'])
+		return groups
 			
