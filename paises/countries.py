@@ -28,12 +28,8 @@ class Countries(list):
 			raise StopIteration
 
 	# prints the dataframe
-	def print(self, **kwargs):		
-		table = Texttable()
-
-		for r in self:
-			table.add_row(r.as_array())
-		table_s = table.draw()
+	def print(self, **kwargs):	
+		pass
 
 	def __repr__(self):
 		self.get_names()
@@ -44,6 +40,14 @@ class Countries(list):
 			if n == c.name or n in c.alias:
 				return c
 		return None
+
+	# Searc a country using various fields
+	def search(self, name):
+		ctrs = Countries()
+		for c in self:
+			if name in c.name or name in c.alias or name in c.groups:
+				ctrs.append(c)
+		return ctrs
 
 	# Return countries belonging to a group
 	def get_group(self, g):		
